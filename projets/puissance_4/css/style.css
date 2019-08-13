@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    background-color: rgb(250, 255, 185);
+}
+ #connect4{
+    background-color: #0e00d3;
+    display: inline-block;
+}
+.col{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+        margin: 5px;
+}
+
+.col.empty{
+    cursor: pointer;
+}
+
+.next-red{
+    background-color: rgb(177, 172, 172);
+}
+.tokenred{
+    background-color: red;
+
+}
+
+.tokenyellow{
+    background-color:yellow;
+}

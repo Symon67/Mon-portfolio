@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+}
+
+$columns : 12!default;
+$gutters : 30px!default;
+$small : 576px!default;
+$medium : 768px; 
+$large : 992px;
+$xlarge : 1200px;
+
+%col {
+    float:left;
+    padding: 0 10;
+    background-color:  rgba(rgb(255, 255, 255), 0.2);
+    border: 1px solid rgba(rgb(0, 0, 0), 0.5);
+    
+}
+
+@for $i from 1 through $columns {
+    
+    .col-#{$i} {
+        
+        @extend %col;
+        
+        width : $i / $columns * 100%;
+        
+    }
+    
+    .col-m-#{$i}, .col-l-#{$i} {@extend %col;}
+    
+}
+
+
+@media only screen and (min-width : $small){
+    @for $i from 1 through $columns {
+        
+        .col-sm-#{$i} {
+            
+            
+            
+            width : $i / $columns * 100%;
+            
+        }
+        
+    }
+}
+
+
+@media only screen and (min-width : $medium){
+    @for $i from 1 through $columns {
+        
+        .col-m-#{$i} {
+            
+            width : $i / $columns * 100%;
+            
+        }
+        
+    }
+}
+
+
+
+@media only screen and (min-width : $large){
+    @for $i from 1 through $columns {
+        
+        .col-l-#{$i} {
+            
+            
+            
+            width : $i / $columns * 100%;
+            
+        }
+        
+    }
+}
+
+@media only screen and (min-width : $xlarge){
+    @for $i from 1 through $columns {
+        
+        .col-xl-#{$i} {
+            
+            
+            
+            width : $i / $columns * 100%;
+            
+        }
+        
+    }
+}
+
+
+.btn-outline-primary {
+    background-color: blue;
+    color:black;
+    width: 80px;
+    height: 80px;
+
+
+}
+
+.btn-outline-success {
+    background-color: rgb(0, 255, 0);
+    max-width: 100%;
+    max-height: 100%; 
+    border-radius: 20px;
+
+}
+
+.btn-outline-danger {
+    background-color: red;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.btn-outline-success:active {
+    color: rgb(255, 255, 255);
+}
+
+.img-blur {
+    max-width: 100%;
+}
+.img-responsive {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-rounded {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25%;
+    border: 2px solid;
+}
+.img-circle {
+    border:2px solid;
+    max-width: 100%;
+    max-height: 100%;
+    
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.img-thumbail {
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.img-blur {
+    max-width: 100%;
+    max-height: 100%;
+    webkit-filter: blur(5px);
+    filter: blur(5px);
+
+}
+
+.bg-muted {
+    color: #6c757d!important;
+}
+
+.bg-primary {
+    color:  #007bff!important;
+}
+
+.bg-success {
+    color: #28a745!important;
+}
+
+.bg-info {
+    color: #17a2b8!important;
+}
+
+.bg-warning {
+    color: #ffc107!important;
+}
+
+.bg-error {
+    color: #dc3545!important;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+@media only screen and (min-width : $xlarge) {
+.visible {
+    visibility: visible !important;
+}
+}
+
+@media only screen and (max-width : $xlarge) {
+.hidden {
+    visibility: hidden;
+}
+}
+@media print {
+.visible-print {
+visibility: visible;
+}
+}
+@media print {
+.hidden-print {
+display: none;
+}
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #000000;
+    position: relative;
+    border: 3px solid rgb(255, 255, 255);
+
+}
+
+ul li {
+    border: 2px solid rgb(255, 255, 255);
+
+    display: inline-block;
+}
+
+ul li a {
+    color: #f8f8f8;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+
+ul ul {
+    position: absolute;
+    min-width: 200px;
+    background: rgb(37, 31, 31);
+    display: none;
+}
+
+ul ul li {
+    display: block;
+    background: #000000;
+}
+
+ul li i {
+    color: #ffffff;
+    float: right;
+    padding-left: 20px;
+}
+
+nav div {
+    background: #000000;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 0.6em;
+    display: none;
+}
+
+@media(max-width: $small) {
+    nav div {
+          display: block;
+    }
+
+    ul {
+          display: none;
+          position: static;
+          background: #000000;
+    }
+
+    ul li {
+          display: block;
+    }
+
+    ul ul {
+          position: static;
+          background: #000000;
+    }
+}
