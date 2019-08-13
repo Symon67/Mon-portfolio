@@ -1,0 +1,186 @@
+
+.img-fluid
+{
+    padding: 30px;
+    margin: 30px;
+    border-radius: 500px;
+}
+
+.bg-blue0 
+{
+    background-color: #293462;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body,
+.bg-black 
+{
+  background-color: #293462;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+}
+
+
+.bg-blue1 
+{
+    background: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4 );
+}
+
+.bg-blue1:hover 
+{
+    background: linear-gradient(to left, #0652dd, #12cbc4, #12cbc4 );
+}
+
+.bg-blue1:active 
+{
+    background: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4 )!important;
+}
+.bg-blue-1 
+{
+    background: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4 );
+}
+
+.bg-blue2 
+{
+    background: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4 );
+}
+
+.bg-blue2:hover 
+{
+    background: linear-gradient(to left, #12cbc4, #12cbc4, #0652dd );
+}
+
+.bg-blue2:active 
+{
+    background: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4 )!important;
+}
+
+.bg-blue3
+{
+    background: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4 );
+}
+
+.bg-blue3:hover 
+{
+    background: linear-gradient(to left, #0652dd, #12cbc4, #12cbc4 );
+}
+
+.bg-blue3:active 
+{
+    background: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4 )!important;
+}
+
+.bg-blue4 
+{
+    background: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4 );
+}
+
+.bg-blue4:hover 
+{
+    background: linear-gradient(to left, #12cbc4, #12cbc4, #0652dd );
+}
+
+.bg-blue4:active 
+{
+    background: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4 )!important;
+}
+
+.font-div 
+{
+    width: 50%;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+
+.img{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.text 
+{
+    color: black;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p 
+{
+    font-size: 20px;
+}
+
+.fa 
+{
+    color: white;
+}
+
+.display-5 
+{
+    font-size: 60px;
+}
+
+.btn-download
+{
+    background-image: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btn-download:active 
+{
+    background: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4 )!important;
+}
+
+
+.btn
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.btn-download:hover
+{
+    background-position: right; 
+    background: linear-gradient(to left, #12cbc4, #12cbc4, #0652dd ); 
+}
+
+h3
+{
+    text-decoration: underline;
+}
+
+
+.btn-env
+{
+    float: right;
+    width: 15%;
+}
+
+.paint
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.puissance4
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.bootstrap
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.autre
+{
+    max-width: 100%;
+    height: auto;
+}
